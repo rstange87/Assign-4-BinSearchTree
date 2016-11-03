@@ -57,6 +57,12 @@ public class BinarySearchTree<E extends Comparable<E>> {
         this.inOrder(new ArrayVisitor(returnList));
         return returnList;
     }
+
+    /* As far as the Big-O case goes for this sort should be N,
+        as it is dependent on the values auto generated and placed into the tree.
+        These sort methods require to visit every element of the binary tree size N.
+     */
+
     public static void main(String[] args){
         BinarySearchTree<Integer> myTestTree = new BinarySearchTree<>();
         for (int i=0; i<40; i++) {
